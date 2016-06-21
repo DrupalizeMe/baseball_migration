@@ -1,0 +1,14 @@
+{
+  "name": "drupal/baseball_migration",
+  "type": "drupal-module",
+  "description": "Example custom migration imports from MySQL database of baseball stats.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/baseball_migration",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/baseball_migration",
+    "source": "http://cgit.drupalcode.org/baseball_migration"
+  },
+  "require": { }
+}
