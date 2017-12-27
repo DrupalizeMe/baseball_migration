@@ -15,7 +15,7 @@ migration_group: baseball
 # use.
 #
 # For our custom migration this should be the source plugin we wrote.
-# \Drupal\baseball_plugin\Plugin\migrate\source\BaseballPlayer The value here is
+# \Drupal\baseball_migration\Plugin\migrate\source\BaseballPlayer The value here is
 # the ID value from the source plugin's annotation.
 source:
   plugin: baseball_player
@@ -63,7 +63,7 @@ process:
 
   # Same thing with the birthday, concat these fields together using the
   # 'concat' process plugin.
-  field_player_birthday:
+  field_player_birth:
     plugin: concat
     source:
       - birthMonth
@@ -77,13 +77,13 @@ process:
   # three fields from the source data, and then use the 'default_value' plugin
   # to provide a default value for the field in the case that the previous step
   # resulted in an empty value.
-  field_player_birthday:
+  field_player_death:
     -
       plugin: concat
       source:
-        - birthMonth
-        - birthDay
-        - birthYear
+        - deathMonth
+        - deathDay
+        - deathYear
       delimiter: /
     -
       plugin: default_value
